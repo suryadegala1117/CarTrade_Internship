@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DropDown.css">
+</head>
+<body>
+    <div id="body_div">
+    <h1>Mobiles and its Prices</h1>
+    <div id="mobile_div">
+            <select name="Select Mobile Type"id="mobile_type" onchange="display_mobile_brands()">
+                <option disabled="disabled" selected="selected">
+                    Select Mobile Type</option>    
+                <option value="KeyPad">KeyPad</option>
+                <option value="SmartPhone">SmartPhone</option>
+            </select>
+        <select name="Select Mobile Brand" id="mobile_brand" onchange="display_mobile_models()">
+                <option disabled="disabled" selected="selected">
+                    Select Mobile Brand
+                </option>    
+        </select>
+        <select name="Select Mobile Model" id="mobile_model">
+            <option disabled="disabled" selected="selected">
+                Select Mobile Model
+            </option>    
+        </select>
+        <button type="select" id="model_price" onclick="display_mobile_model_price()">
+            Get Price
+        </button>
+        <p id="mobile_price"></p>
+    </div>
+</div>
+    <script src="DropDown.js"></script>
+</body>
+</html>
